@@ -10,13 +10,13 @@ Link: https://giedrebi.github.io/TASK2_DIAMOND/
 
 `var n = 10;` :
 
-<img src="readme_images/even.png" width="300">
+<img src="readme_images/even.png" width="150">
 
 * If entering an odd number should display the middle row as well: 
 
 `var n = 11;` :
 
-<img src="readme_images/odd.png" width="300">
+<img src="readme_images/odd.png" width="150">
 
 * For this task I was using HTML and Javascript.
 
