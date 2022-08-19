@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function diamond(n, i = 1) {
+            const
+                STAR = '*',
+                SPACE = '&nbsp' + '&nbsp',
+                LINE = SPACE.repeat((n - i) / 2) + STAR.repeat(i) + '</br>';
+
+            if (n % 2 == 0) {
+                if (i >= n)
+                    return
+                document.write(LINE);
+                diamond(n, i + 2);
+                document.write(LINE);
+
+            } else {
+                document.write(LINE);
+                if (i >= n)
+                    return
+                diamond(n, i + 2);
+                document.write(LINE);
+            }
+        }
+        var n = 9;
+        diamond(n);
+    </script>
+
+</body>
+
+</html>
